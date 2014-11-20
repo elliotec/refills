@@ -12,6 +12,14 @@ title: Refills
 
   <div id="example">
 
+    <section id="parallax" class="refill">
+      <div class="refills-wrapper">
+        <div class="line-behind-text"><h6>Parallax</h6></div>
+        <%= partial "parallax" %>
+      </div>
+      <div class="refill-snippet"><%= code_for('parallax') %></div>
+    </section>
+
     <section id="accordion-tabs" class="refill">
       <div class="refills-wrapper">
         <div class="line-behind-text"><h6>Accordion / Tabs</h6></div>
@@ -182,7 +190,8 @@ title: Refills
         <%= partial "vertical_tabs" %>
       </div>
       <div class="refill-snippet"><%= code_for('vertical_tabs') %></div>
-    </div> 
-  </div>
+    </section>
+  </div> 
+</div>
 
 <%= partial "refills-page-scripts" %>

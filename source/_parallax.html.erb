@@ -1,0 +1,15 @@
+<div class="parallax-window">
+  <h1>Parallax</h1>
+  <div class="parallax-background"></div>
+</div>
+
+<script>
+  $(window).scroll(function(e){
+    parallax();
+  });
+
+  function parallax(){
+    var scrolled = $(window).scrollTop();
+    $('.parallax-background').css('top', -(scrolled*0.35)+'px');
+  }
+</script>
